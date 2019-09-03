@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="surveyform.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+</head>
+<body>
+		<h1 class="title">Survey Form</h1>
+		<div class="form-outer">
+		<p class="description">Let us know how we can improve codecamp</p>
+	<form action="https://codepen.io/freeCodeCamp/full/VPaoNP" method="GET">
+		<div class="row">
+			<div class="labels">
+			<label>*Name:
+			</label>
+			</div>
+			<div class="input">
+			<input type="text" placeholder="Enter your name" required>
+			</div>
+		</div>
+		<div class="row">
+			<div class="labels">
+			<label>*Email:
+			</label>
+		    </div>
+			<div class="input">
+			<input type="email" placeholder="Enter your Email" required>
+			</div>
+		</div>
+		<div class="row">
+			<div class="labels">
+			<label>*Age:
+			</label>
+		    </div>
+			<div class="input">
+			<input type="number" min="1" max="100" required>
+			</div>
+		</div>
+		<div class="row">
+			<div class="labels">
+			<label>Which action best describes your current role?
+			</label>
+			</div>
+			<div class="input">
+			<select id="dropdown">
+				<option disabled value>Select an Option</option>
+				<option value="student">Student</option>
+				<option value="job">Full time Job</option>
+				<option value="learner">Full time Learner</option>
+				<option value="no">No Say</option>
+				<option value="other">Other</option>
+			</select>
+		    </div>
+		</div>
+		<div class="row">
+			<div class="labels">
+			<label>* How likely is that you would recommend freeCodeCamp to a friend?</label>
+			</div>
+			<div class="input">
+				<ul class="list">
+					<li><label id="list1">Definitely</label><input id="radio" type="radio" name="definitely" value="1"></li>
+					<li><label id="list1">Maybe</label><input id="radio" type="radio" name="maybe" value="2"></li>
+					<li><label id="list1">Not Sure</label><input id="radio" type="radio" name="notsure" value="3"></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="labels">
+			<label>What you like most in FCC:</label>
+			</div>
+			<div class="input">
+			<select id="dropdown">
+				<option disabled value>Select an option</option>
+				<option value="challenges">Challenges</option>
+				<option value="projects">Projects</option>
+				<option value="community">Community</option>
+				<option value="opensource">Open Source</option>
+			</select>
+			</div>
+		</div>
+		<div class="row">
+			<div class="labels">
+			<label>Things that should be improved in future(Check all that apply):</label>
+			</div>
+			<div class="input">
+			<ul>
+				<li><label id="list2">Front End Projects</label><input id="checkbox" type="checkbox" value="1"></li>
+				<li><label id="list2">Back End Projects</label><input id="checkbox" type="checkbox" value="2"></li>
+				<li><label id="list2">Data Visualization</label><input id="checkbox" type="checkbox" value="3"></li>
+				<li><label id="list2">Challenges</label><input id="checkbox" type="checkbox" value="4"></li>
+				<li><label id="list2">Open Source Community</label><input id="checkbox" type="checkbox" value="5"></li>
+				<li><label id="list2">Gitter Help Rooms</label><input id="checkbox" type="checkbox" value="6"></li>				
+				<li><label id="list2">Videos</label><input id="checkbox"type="checkbox" value="7"></li>
+			</ul>
+		    </div>
+		</div>
+		<div class="row">
+			<label>Any Comments or Suggestions:</label>
+			<textarea rows="5" col="50" placeholder="Enter your comment here"></textarea>
+		</div>
+		<div class="row">
+		<button id="submit" type="submit">Submit</button>
+		</div>			
+	</form>
+</div>
+</body>
+</html>
